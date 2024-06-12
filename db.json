@@ -1,19 +1,42 @@
 {
-  "posts": [
+  "category": [
+    { "id": 1, "title": "액션" },
+    { "id": 2, "title": "SF" },
+    { "id": 3, "title": "코미디" },
+    { "id": 4, "title": "공포" },
+    { "id": 5, "title": "스포츠" },
+    { "id": 6, "title": "판타지" }
+  ],
+  "movie": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "movieCategory": "액션",
+      "title": "범죄도시"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "movieCategory": "SF",
+      "title": "인터스텔라"
+    },
+    {
+      "id": 3,
+      "movieCategory": "코미디",
+      "title": "극한직업"
+    },
+    {
+      "id": 4,
+      "movieCategory": "공포",
+      "title": "컨저링"
+    },
+    {
+      "id": 5,
+      "movieCategory": "스포츠",
+      "title": "국가대표"
+    },
+    {
+      "id": 6,
+      "movieCategory": "판타지",
+      "title": "해리포터"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
