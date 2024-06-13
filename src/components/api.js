@@ -1,6 +1,8 @@
-export default async function fetchData(endpoint) {
+export default async function fetchData(endpoint, options = '') {
   try {
-    const resp = await fetch(`http://localhost:3001/${endpoint}`);
+    const resp = options
+      ? await fetch(`http://localhost:3001/${endpoint}`, options)
+      : await fetch(`http://localhost:3001/${endpoint}`);
     if (!resp.ok) {
       throw new Error(`error to ${endpoint}`);
     }

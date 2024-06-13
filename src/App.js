@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Content from './components/Content';
+import Create from './components/Create';
 import Home from './components/Home';
 import Main from './components/Main';
 import './reset.css';
@@ -10,7 +11,8 @@ function App() {
       <Main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/detail" element={<Content />} />
+          <Route path="/movie/:id" element={<Content />} />
+          <Route path="/create" element={<Create />} />
         </Routes>
       </Main>
     </BrowserRouter>

@@ -97,6 +97,16 @@ header,
 hgroup,
 menu,
 nav,
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+input {
+  outline: none;
+}
 section {
   display: block;
 }
