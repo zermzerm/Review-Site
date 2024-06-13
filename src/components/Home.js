@@ -28,8 +28,10 @@ export default function Home() {
             <li key={el.id}>{el.title}</li>
           ))}
         </ul>
+        <div>필터</div>
+        <div>정렬</div>
         <div className={styles.orderby}>
-          <div>정렬</div>
+          <div>뷰</div>
           <div
             onClick={() => {
               handleOrderBy();
@@ -45,6 +47,7 @@ export default function Home() {
             카드
           </div>
         </div>
+        <input>search</input>
         <div
           className={`${styles.contentWrapper} 
             ${order ? styles.contentWrapperCard : styles.contentWrapperList}`}
